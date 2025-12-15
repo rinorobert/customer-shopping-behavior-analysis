@@ -1,6 +1,6 @@
 # Customer Shopping Behavior Analysis
 
-This project analyzes customer shopping patterns to uncover insights into purchasing behavior, spending trends, and the factors influencing buying decisions. The objective is to transform raw transactional data into meaningful insights that support data-driven business decisions.
+This project analyzes customer shopping patterns to uncover insights into purchasing behavior, spending trends, and the factors influencing buying decisions. The objective is to transform raw transactional data into meaningful insights that support data-driven business decisions using an end-to-end analytics workflow.
 
 ---
 
@@ -10,20 +10,32 @@ This project analyzes customer shopping patterns to uncover insights into purcha
 ~ Analyze the impact of discounts, subscriptions, shipping types, and loyalty  
 ~ Identify high-performing products and categories  
 ~ Segment customers based on purchase history and behavior  
-~ Generate insights that can help improve sales strategy and customer engagement  
+~ Uncover trends through exploratory data analysis (EDA)  
+~ Communicate insights through interactive dashboards  
 
 ---
 
 ## Current Progress
 
-### Data Preparation & Engineering
+### Data Preparation & Feature Engineering
 
-~ Dataset added: customer_shopping_behavior.csv  
+~ Dataset added: `customer_shopping_behavior.csv`  
 ~ Data cleaned and preprocessed using Python  
 ~ Missing and null values handled  
 ~ Columns renamed for clarity and consistency  
-~ New features engineered: age_group and purchase_frequency_days  
-~ Redundant columns removed  
+~ New features engineered: `age_group`, `purchase_frequency_days`, `customer_segment`  
+~ Redundant and irrelevant columns removed  
+
+---
+
+### Exploratory Data Analysis (EDA)
+
+~ Distribution analysis of age, gender, purchase amount, and frequency  
+~ Revenue trends across customer segments and age groups  
+~ Behavioral comparison of subscribed vs non-subscribed customers  
+~ Impact of discounts and shipping types on spending  
+~ Visualizations created using Matplotlib and Pandas  
+~ Insights documented clearly alongside plots in the Jupyter notebook  
 
 ---
 
@@ -31,6 +43,7 @@ This project analyzes customer shopping patterns to uncover insights into purcha
 
 ~ Connected Python to PostgreSQL  
 ~ Loaded the cleaned dataset into relational tables using SQLAlchemy  
+~ Performed analytical queries directly on PostgreSQL  
 
 ---
 
@@ -42,30 +55,38 @@ This project analyzes customer shopping patterns to uncover insights into purcha
 ~ Comparison of average purchase amounts across shipping types  
 ~ Customer segmentation into New, Returning, and Loyal  
 ~ Analysis of repeat buyers and subscription likelihood  
-~ Product and category-level performance analysis  
+~ Product- and category-level performance analysis  
 ~ Revenue contribution by different age groups  
 
-All SQL queries and explanations are documented clearly inside the Jupyter notebook.
+All SQL queries and explanations are documented inside the Jupyter notebook.
+
+---
+
+### Data Visualization (Power BI)
+
+~ Power BI dashboard created from the cleaned dataset  
+~ Interactive visuals for revenue, customer segments, and product performance  
+~ Filters for age group, gender, subscription status, and category  
+~ Designed to support business-level decision making  
 
 ---
 
 ## Tools & Technologies
 
-~ Python (Pandas, SQLAlchemy)  
+~ Python (Pandas, Matplotlib, SQLAlchemy)  
 ~ PostgreSQL  
 ~ SQL  
 ~ Jupyter Notebook  
+~ Power BI  
 ~ Git & GitHub  
-~ Power BI (planned)
 
 ---
 
 ## Upcoming Work
 
-~ Deeper exploratory data analysis (EDA)  
-~ Power BI dashboard for visual storytelling  
-~ Consolidated business insights and recommendations  
-~ Portfolio-level project refinement  
+~ Final business insights and recommendations  
+~ Dashboard refinement and storytelling improvements  
+~ Portfolio-level documentation and polishing  
 
 ---
 
