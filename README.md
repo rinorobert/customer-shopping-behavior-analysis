@@ -1,98 +1,114 @@
 # Customer Shopping Behavior Analysis
 
-This project analyzes customer shopping patterns to uncover insights into purchasing behavior, spending trends, and the factors influencing buying decisions. The objective is to transform raw transactional data into meaningful insights that support data-driven business decisions using an end-to-end analytics workflow.
+This project analyzes customer shopping patterns to uncover insights into purchasing behavior, spending trends, and factors influencing buying decisions. The objective is to transform raw transactional data into meaningful insights that support data-driven business decisions using an end-to-end analytics workflow.
+
+This project is **completed** and includes:
+- 📄 A detailed project report (PDF)
+- 📊 A summarized presentation (PPT)
 
 ---
 
-## Project Scope & Objectives
+## 🎯 Project Scope & Objectives
 
-~ Understand how different customer segments contribute to revenue  
-~ Analyze the impact of discounts, subscriptions, shipping types, and loyalty  
-~ Identify high-performing products and categories  
-~ Segment customers based on purchase history and behavior  
-~ Uncover trends through exploratory data analysis (EDA)  
-~ Communicate insights through interactive dashboards  
-
----
-
-## Current Progress
-
-### Data Preparation & Feature Engineering
-
-~ Dataset added: `customer_shopping_behavior.csv`  
-~ Data cleaned and preprocessed using Python  
-~ Missing and null values handled  
-~ Columns renamed for clarity and consistency  
-~ New features engineered: `age_group`, `purchase_frequency_days`, `customer_segment`  
-~ Redundant and irrelevant columns removed  
+- Understand how different customer segments contribute to revenue  
+- Analyze the impact of discounts, subscriptions, and shipping types  
+- Identify high-performing products and categories  
+- Segment customers based on purchase history and behavior  
+- Uncover trends through exploratory data analysis (EDA)  
+- Communicate insights through dashboards and documentation  
 
 ---
 
-### Exploratory Data Analysis (EDA)
+## ✅ Project Status: Completed
 
-~ Distribution analysis of age, gender, purchase amount, and frequency  
-~ Revenue trends across customer segments and age groups  
-~ Behavioral comparison of subscribed vs non-subscribed customers  
-~ Impact of discounts and shipping types on spending  
-~ Visualizations created using Matplotlib and Pandas  
-~ Insights documented clearly alongside plots in the Jupyter notebook  
+### 🔹 Data Preparation & Feature Engineering
 
----
-
-### Database Integration
-
-~ Connected Python to PostgreSQL  
-~ Loaded the cleaned dataset into relational tables using SQLAlchemy  
-~ Performed analytical queries directly on PostgreSQL  
+- Dataset used: `customer_shopping_behavior.csv`  
+- Data cleaned and preprocessed using Python (pandas)  
+- Missing values in **Review Rating** handled using category-wise median  
+- Column names standardized using **snake_case**  
+- Feature engineering performed:
+  - `age_group` created using quantile-based binning
+  - `purchase_frequency_days` created by mapping purchase frequency to numeric values  
+- Data quality verified using sample outputs  
 
 ---
 
-### SQL-Based Analysis (PostgreSQL)
+### 🔹 Exploratory Data Analysis (Python)
 
-~ Revenue comparison by gender  
-~ Spending behavior of subscribed vs non-subscribed customers  
-~ Impact of discounts on purchasing behavior  
-~ Comparison of average purchase amounts across shipping types  
-~ Customer segmentation into New, Returning, and Loyal  
-~ Analysis of repeat buyers and subscription likelihood  
-~ Product- and category-level performance analysis  
-~ Revenue contribution by different age groups  
-
-All SQL queries and explanations are documented inside the Jupyter notebook.
+- Distribution analysis of age, purchase amount, and purchase frequency  
+- Behavioral comparison across age groups and subscription status  
+- Initial visual exploration using Pandas and Matplotlib  
+- Insights documented alongside the analysis code  
 
 ---
 
-### Data Visualization (Power BI)
+### 🔹 Database Integration
 
-~ Power BI dashboard created from the cleaned dataset  
-~ Interactive visuals for revenue, customer segments, and product performance  
-~ Filters for age group, gender, subscription status, and category  
-~ Designed to support business-level decision making  
-
----
-
-## Tools & Technologies
-
-~ Python (Pandas, Matplotlib, SQLAlchemy)  
-~ PostgreSQL  
-~ SQL  
-~ Jupyter Notebook  
-~ Power BI  
-~ Git & GitHub  
+- Python connected to PostgreSQL using SQLAlchemy  
+- Cleaned dataset loaded into relational tables  
+- SQL-based analysis performed on the database  
 
 ---
 
-## Upcoming Work
+### 🔹 SQL Analysis (PostgreSQL)
 
-~ Final business insights and recommendations  
-~ Dashboard refinement and storytelling improvements  
-~ Portfolio-level documentation and polishing  
+- Revenue comparison by gender  
+- Spending behavior of subscribed vs non-subscribed customers  
+- Impact of discounts on purchasing behavior  
+- Comparison of average purchase amounts across shipping types  
+- Customer segmentation into New, Returning, and Loyal  
+- Repeat buyers and subscription likelihood analysis  
+- Product- and category-level performance analysis  
+- Revenue contribution by different age groups  
+
+All SQL queries and explanations are documented in the project report.
 
 ---
 
-## About Me
+### 🔹 Data Visualization (Power BI)
 
-I’m **Rino Robert**, a B.Tech AI & Data Science student focused on building practical, end-to-end analytics projects that reflect real-world industry workflows.
+- Power BI dashboard created using the cleaned dataset  
+- Interactive visuals for:
+  - Revenue trends  
+  - Customer segments  
+  - Product performance  
+- Filters for age group, gender, subscription status, and category  
+- Dashboard designed to support business-level decision making  
+
+---
+
+## 📄 Project Documentation
+
+- **Customer Shopping Behavior Analysis.pdf** – Detailed project report  
+- **Customer-Shopping-Behavior-Analysis.pptx** – Summary presentation  
+
+---
+
+## 🛠️ Tools & Technologies Used
+
+- Python (Pandas, Matplotlib, SQLAlchemy)  
+- PostgreSQL & SQL  
+- Jupyter Notebook  
+- Power BI  
+- VS Code  
+- Git & GitHub  
+
+---
+
+## 📌 Key Learnings
+
+- End-to-end data analytics workflow  
+- Practical data cleaning and feature engineering  
+- SQL-based business analysis on real datasets  
+- Converting data insights into business recommendations  
+- Presenting results through reports and dashboards  
+
+---
+
+## 👨‍🎓 About Me
+
+I’m **Rino Robert**, a B.Tech student in **Artificial Intelligence & Data Science**, focused on building practical, end-to-end analytics projects aligned with real-world industry workflows.
 
 📧 Email: rinorobert710@gmail.com  
 🔗 LinkedIn: https://www.linkedin.com/in/rino-robert/
